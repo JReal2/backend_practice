@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class  FcboardApplication {
+public class FcBoardApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FcboardApplication.class, args);
+        SpringApplication.run(FcBoardApplication.class, args);
     }
 
 }
