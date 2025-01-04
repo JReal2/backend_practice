@@ -53,7 +53,6 @@ class JpaRepositoryTest {
 //        //Then
 //        assertThat(articleRepository.count())
 //                .isEqualTo(previousCount + 1);
-//
 //    }
 //
 //    @DisplayName("update 테스트")
@@ -70,7 +69,6 @@ class JpaRepositoryTest {
 //        //Then
 //        assertThat(savedArticle)
 //                .hasFieldOrPropertyWithValue("hashtag", updatedHashtag);
-//
 //    }
 //
     @DisplayName("delete 테스트")
@@ -88,6 +86,5 @@ class JpaRepositoryTest {
         //Then
         assertThat(articleRepository.count()).isEqualTo(previousArticleCount - 1);
         assertThat(articleCommentRepository.count()).isEqualTo(previousArticleCommentCount - deletedCommentsSize);
-
     }
 }
