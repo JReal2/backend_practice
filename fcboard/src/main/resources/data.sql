@@ -1,3 +1,10 @@
+-- 테스트 계정
+-- TODO: 테스트용이지만 비밀번호가 노출된 데이터 세팅. 개선 예정
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+    ('jreal2', '1q2w3e4r', 'JR', 'jreal2@gmail.com', 'I am JReal.', now(), 'JR', now(), 'JR')
+;
+
+-- dummy 게시글
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Aenean auctor gravida sem.', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 'Maroon', 'Sindee', 'Cori', '2024-11-04 11:14:38', '2024-07-20 07:46:42');
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Donec vitae nisi.', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', null, 'Darill', 'Alvan', '2024-11-12 10:04:52', '2024-02-08 02:08:59');
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Mauris ullamcorper purus sit amet nulla.', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'Maroon', 'Godfry', 'Evelyn', '2024-01-12 02:38:21', '2024-07-20 15:46:53');
