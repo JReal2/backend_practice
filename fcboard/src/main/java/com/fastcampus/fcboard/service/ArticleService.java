@@ -2,6 +2,7 @@ package com.fastcampus.fcboard.service;
 
 import com.fastcampus.fcboard.domain.type.SearchType;
 import com.fastcampus.fcboard.dto.ArticleDto;
+import com.fastcampus.fcboard.dto.ArticleUpdateDto;
 import com.fastcampus.fcboard.repository.ArticleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -23,7 +24,18 @@ public class ArticleService {
     }
 
     @Transactional(readOnly = true)
-    public ArticleDto searchArticle(long l) {
+    public ArticleDto searchArticle(long articleId) {
         return null;
+    }
+
+    public void saveArticle(ArticleDto dto) {
+
+    }
+
+    public void updateArticle(long articleId, ArticleUpdateDto dto) {
+
+    }
+
+    public void deleteArticle(long articleId) {
     }
 }
