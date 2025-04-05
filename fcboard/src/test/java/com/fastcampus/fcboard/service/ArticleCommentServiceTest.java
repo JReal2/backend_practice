@@ -27,7 +27,7 @@ class ArticleCommentServiceTest {
     @Mock private ArticleCommentRepository articleCommentRepository;
     @Mock private ArticleRepository articleRepository;
 
-    @DisplayName("게시글 ID 조회하면 해당되는 댓글 리스트 반환")
+    @DisplayName("게시글 ID 조회하면 해당하는 댓글 리스트 반환")
     @Test
     void givenArticleId_whenSearchingComments_thenReturnsArticleComments() {
         // Given
