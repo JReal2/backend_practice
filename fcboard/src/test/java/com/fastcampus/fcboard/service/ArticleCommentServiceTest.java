@@ -34,7 +34,7 @@ class ArticleCommentServiceTest {
         Long articleId = 1L;
 
         BDDMockito.given(articleRepository.findById(1L)).willReturn(Optional.of(
-                Article.of("title", "conetent", "#java")
+                Article.of("title", "content", "#java")
         ));
 
         // When
