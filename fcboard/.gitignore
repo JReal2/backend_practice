@@ -2,7 +2,7 @@ HELP.md
 .env
 .gradle
 build/
-!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar 
 !**/src/main/**/build/
 !**/src/test/**/build/
 
@@ -19,6 +19,9 @@ src/main/generated
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+
+### JPA Buddy
+.jpb/
 
 ### IntelliJ IDEA ###
 .idea
