@@ -2,6 +2,7 @@ package com.fastcampus.fcboard.service;
 
 import com.fastcampus.fcboard.domain.Article;
 import com.fastcampus.fcboard.domain.ArticleComment;
+import com.fastcampus.fcboard.dto.ArticleCommentDto;
 import com.fastcampus.fcboard.repository.ArticleCommentRepository;
 import com.fastcampus.fcboard.repository.ArticleRepository;
 import org.junit.jupiter.api.DisplayName;
@@ -16,7 +17,11 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
+import static org.hamcrest.Matchers.any;
+import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
+import static org.mockito.Mockito.never;
 
 @DisplayName("비즈니스 로직 - 게시글 댓글")
 @ExtendWith(MockitoExtension.class)
@@ -33,7 +38,7 @@ class ArticleCommentServiceTest {
         // Given
         Long articleId = 1L;
 
-        BDDMockito.given(articleRepository.findById(1L)).willReturn(Optional.of(
+        given(articleRepository.findById(1L)).willReturn(Optional.of(
                 Article.of("title", "content", "#java")
         ));
 
@@ -44,4 +49,6 @@ class ArticleCommentServiceTest {
         assertThat(articleComments).isNotNull();
         then(articleRepository).should().findById(articleId);
     }
+
+    // TODO  댓글 입력, 수정, 삭제 테스트 추후 추가
 }
