@@ -43,7 +43,7 @@ class ArticleCommentServiceTest {
         ));
 
         // When
-        List<ArticleComment> articleComments = sut.searchArticleComment();
+        List<ArticleComment> articleComments = sut.searchArticleComments();
 
         // Then
         assertThat(articleComments).isNotNull();

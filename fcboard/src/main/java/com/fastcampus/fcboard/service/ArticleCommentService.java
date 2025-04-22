@@ -1,6 +1,7 @@
 package com.fastcampus.fcboard.service;
 
 import com.fastcampus.fcboard.domain.ArticleComment;
+import com.fastcampus.fcboard.dto.ArticleCommentDto;
 import com.fastcampus.fcboard.repository.ArticleCommentRepository;
 import com.fastcampus.fcboard.repository.ArticleRepository;
 import lombok.RequiredArgsConstructor;
@@ -18,7 +19,16 @@ public class ArticleCommentService {
     private final ArticleCommentRepository articleCommentRepository;
 
     @Transactional(readOnly = true)
-    public List<ArticleComment> searchArticleComment() {
+    public List<ArticleComment> searchArticleComments() {
         return List.of();
+    }
+
+    public void saveArticleComment(ArticleCommentDto dto) {
+    }
+
+    public void updateArticleComment(ArticleCommentDto dto) {
+    }
+
+    public void deleteArticleComment(Long articleCommentId) {
     }
 }
